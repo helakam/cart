@@ -29,3 +29,56 @@ body {
    padding: 5% 0;
    margin-bottom: 5em;
 }
+.projTitle {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
+   text-align: center;
+   font-size: 2em;
+   padding: 1em 0;
+   border-bottom: 1px solid #dadada;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+}
+ .projTitle span {
+   font-family: 'Droid Serif', serif;
+   font-weight: normal;
+   font-style: italic;
+   text-transform: lowercase;
+   color: #777;
+}
+ .heading {
+   padding: 1em 0;
+   border-bottom: 1px solid #d0d0d0;
+}
+ .heading h1 {
+   font-family: 'Droid Serif', serif;
+   font-size: 2em;
+   float: left;
+}
+ .heading a.continue:link, .heading a.continue:visited {
+   text-decoration: none;
+   font-family: 'Montserrat', sans-serif;
+   letter-spacing: -0.015em;
+   font-size: 0.75em;
+   padding: 1em;
+   color: #fff;
+   background: #D17966 ;
+   font-weight: bold;
+   border-radius: 50px;
+   float: right;
+   text-align: right;
+   transition: all 0.25s linear;
+}
+ .heading a.continue:after {
+   content: "\276f";
+   padding: 0.5em;
+   position: relative;
+   right: 0;
+   transition: all 0.15s linear;
+}
+ .heading a.continue:hover, .heading a.continue:focus, .heading a.continue:active {
+   background: #f69679;
+}
+ .heading a.continue:hover:after, .heading a.continue:focus:after, .heading a.continue:active:after {
+   right: -10px;
+}
