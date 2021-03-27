@@ -5,3 +5,27 @@
 *{
    box-sizing: border-box;
 }
+body {
+   color: #333;
+   font-family: 'Droid Serif', serif;
+}
+ img {
+   max-width: 100%;
+}
+ .cf:before, .cf:after {
+   content: " ";
+   display: table;
+}
+ .cf:after {
+   clear: both;
+}
+ .cf {
+   *zoom: 1;
+}
+ .wrap {
+   width: 75%;
+   max-width: 960px;
+   margin: 0 auto;
+   padding: 5% 0;
+   margin-bottom: 5em;
+}
