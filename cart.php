@@ -55,3 +55,63 @@ if (isset($_POST['remove'])){
     <a href="#" class="continue">Continue Shopping</a>
   </div>
 </div>
+
+  <section class="container content-section">
+            
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            </section>
+            <div class="cart-items">
+                <?php
+
+                $total = 0;
+                    if (isset($_SESSION['cart'])){
+                        $product_id = array_column($_SESSION['cart'], 'product_id');
+
+                        $result = $db->getData();
+                        while ($row = mysqli_fetch_assoc($result)){
+                            foreach ($product_id as $id){
+                                if ($row['p_id'] == $id){
+                                    cartElement1($row['p_path1'], $row['p_name'],$row['p_price'], $row['p_id']);
+                                    $total = $total + (int)$row['p_price'];
+                                }
+                            }
+                        }
+                        
+                    }else{
+                        echo "<h5>Cart is Empty</h5>";
+                    }
+
+                ?>
+                </div>
+            <div class="cart-total">
+                <section class="container content-section">
+                    <div class="wrap cf">
+        <div class="subtotal cf">
+                <strong class="cart-total-title">PRICE DETAILS</strong>
+                <hr>
+                
+                    
+                        <?php
+                            if (isset($_SESSION['cart'])){
+                                $count  = count($_SESSION['cart']);
+                                echo "<h6>Price ($count items)</h6>";
+                            }else{
+                                echo "<h6>Price (0 items)</h6>";
+                            }
+                        ?>
+                        <h6>Delivery Charges</h6>
+                        <hr>
+                        <h6>Amount Payable</h6>
+                  
+                    
+                        <h6>RS<?php echo $total; ?></h6>
+                        <h6 class="text-success">FREE</h6>
+                        <hr>
+                        <h6>RS<?php
+                            echo  $total;
+                            ?></h6>
+                   </section>
