@@ -1,22 +1,41 @@
 @import "compass/css3";
- @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
- @import "compass/reset";
- * {
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
+@import "compass/reset";
+
+*{
    box-sizing: border-box;
 }
-.cf:before, .cf:after {
+
+.cf:before, .cf:after 
+{
    content: " ";
    display: table;
 }
- .cf:after {
+
+ .cf:after 
+{
    clear: both;
 }
- .cf {
+
+ .cf 
+{
    *zoom: 1;
 }
- .wrap {
+
+ .wrap 
+{
    width: 75%;
    max-width: 960px;
    margin: 0 auto;
    padding: 1% 0;  
+}
+
+.heading {
+   padding: 1em 0;
+   border-bottom: 1px solid #d0d0d0;
+}
+ .heading h1 {
+   font-family: 'Droid Serif', serif;
+   font-size: 2em;
+   float: left;
 }
