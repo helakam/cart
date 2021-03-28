@@ -203,3 +203,29 @@ body {
    margin-bottom: 0.5em;
    letter-spacing: -0.025em;
 }
+.promoCode a.btn {
+   float: left;
+   width: 15%;
+   padding: 0.75em 0;
+   border-radius: 0 1em 1em 0;
+   text-align: center;
+   border: 1px solid #82ca9c;
+}
+ .promoCode a.btn:hover {
+   border: 1px solid #f69679;
+   background: #f69679;
+}
+ .btn:link, .btn:visited {
+   text-decoration: none;
+   font-family: 'Montserrat', sans-serif;
+   letter-spacing: -0.015em;
+   font-size: 1em;
+   padding: 1em 3em;
+   color: #fff;
+   background: #82ca9c;
+   font-weight: bold;
+   border-radius: 50px;
+   float: right;
+   text-align: right;
+   transition: all 0.25s linear;
+}
