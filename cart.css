@@ -82,3 +82,150 @@ body {
  .heading a.continue:hover:after, .heading a.continue:focus:after, .heading a.continue:active:after {
    right: -10px;
 }
+.tableHead {
+   display: table;
+   width: 100%;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 0.75em;
+}
+ .tableHead li {
+   display: table-cell;
+   padding: 1em 0;
+   text-align: center;
+}
+ .tableHead li.prodHeader {
+   text-align: left;
+}
+ .cart {
+   padding: 1em 0;
+}
+ .cart .items {
+   display: block;
+   width: 100%;
+   vertical-align: middle;
+   padding: 1.5em;
+   border-bottom: 1px solid #fafafa;
+}
+ .cart .items.even {
+   background: #fafafa;
+}
+ .cart .items .infoWrap {
+   display: table;
+   width: 100%;
+}
+ .cart .items .cartSection {
+   display: table-cell;
+   vertical-align: middle;
+}
+.cart .items .cartSection .itemNumber {
+   font-size: 0.75em;
+   color: #777;
+   margin-bottom: 0.5em;
+}
+ .cart .items .cartSection h3 {
+   font-size: 1em;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 0.025em;
+}
+ .cart .items .cartSection p {
+   display: inline-block;
+   font-size: 0.85em;
+   color: #777;
+   font-family: 'Montserrat', sans-serif;
+}
+ .cart .items .cartSection p .quantity {
+   font-weight: bold;
+   color: #333;
+}
+ .cart .items .cartSection p.stockStatus {
+   color: #82ca9c;
+   font-weight: bold;
+   padding: 0.5em 0 0 1em;
+   text-transform: uppercase;
+}
+ .cart .items .cartSection p.stockStatus.out {
+   color: #f69679;
+}
+ .cart .items .cartSection .itemImg {
+   width: 4em;
+   float: left;
+}
+ .cart .items .cartSection.qtyWrap, .cart .items .cartSection.prodTotal {
+   text-align: center;
+}
+ .cart .items .cartSection.qtyWrap p, .cart .items .cartSection.prodTotal p {
+   font-weight: bold;
+   font-size: 1.25em;
+}
+ .cart .items .cartSection input.qty {
+   width: 2em;
+   text-align: center;
+   font-size: 1em;
+   padding: 0.25em;
+   margin: 1em 0.5em 0 0;
+}
+ .cart .items .cartSection .itemImg {
+   width: 8em;
+   display: inline;
+   padding-right: 1em;
+}
+.special {
+   display: block;
+   font-family: 'Montserrat', sans-serif;
+}
+ .special .specialContent {
+   padding: 1em 1em 0;
+   display: block;
+   margin-top: 0.5em;
+   border-top: 1px solid #dadada;
+}
+ .special .specialContent:before {
+   content: "\21b3";
+   font-size: 1.5em;
+   margin-right: 1em;
+   color: #6f6f6f;
+   font-family: helvetica, arial, sans-serif;
+}
+ 
+ .promoCode {
+   border: 2px solid #efefef;
+   float: left;
+   width: 35%;
+   padding: 2%;
+}
+ .promoCode label {
+   display: block;
+   width: 100%;
+   font-style: italic;
+   font-size: 1.15em;
+   margin-bottom: 0.5em;
+   letter-spacing: -0.025em;
+}
+.promoCode a.btn {
+   float: left;
+   width: 15%;
+   padding: 0.75em 0;
+   border-radius: 0 1em 1em 0;
+   text-align: center;
+   border: 1px solid #82ca9c;
+}
+ .promoCode a.btn:hover {
+   border: 1px solid #f69679;
+   background: #f69679;
+}
+ .btn:link, .btn:visited {
+   text-decoration: none;
+   font-family: 'Montserrat', sans-serif;
+   letter-spacing: -0.015em;
+   font-size: 1em;
+   padding: 1em 3em;
+   color: #fff;
+   background: #82ca9c;
+   font-weight: bold;
+   border-radius: 50px;
+   float: right;
+   text-align: right;
+   transition: all 0.25s linear;
+}
