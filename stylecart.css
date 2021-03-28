@@ -4,3 +4,19 @@
  * {
    box-sizing: border-box;
 }
+.cf:before, .cf:after {
+   content: " ";
+   display: table;
+}
+ .cf:after {
+   clear: both;
+}
+ .cf {
+   *zoom: 1;
+}
+ .wrap {
+   width: 75%;
+   max-width: 960px;
+   margin: 0 auto;
+   padding: 1% 0;  
+}
