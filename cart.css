@@ -82,3 +82,38 @@ body {
  .heading a.continue:hover:after, .heading a.continue:focus:after, .heading a.continue:active:after {
    right: -10px;
 }
+.tableHead {
+   display: table;
+   width: 100%;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 0.75em;
+}
+ .tableHead li {
+   display: table-cell;
+   padding: 1em 0;
+   text-align: center;
+}
+ .tableHead li.prodHeader {
+   text-align: left;
+}
+ .cart {
+   padding: 1em 0;
+}
+ .cart .items {
+   display: block;
+   width: 100%;
+   vertical-align: middle;
+   padding: 1.5em;
+   border-bottom: 1px solid #fafafa;
+}
+ .cart .items.even {
+   background: #fafafa;
+}
+ .cart .items .infoWrap {
+   display: table;
+   width: 100%;
+}
+ .cart .items .cartSection {
+   display: table-cell;
+   vertical-align: middle;
+}
