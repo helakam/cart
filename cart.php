@@ -93,8 +93,7 @@ if (isset($_POST['remove'])){
         <div class="subtotal cf">
                 <strong class="cart-total-title">PRICE DETAILS</strong>
                 <hr>
-                
-                    
+                                
                         <?php
                             if (isset($_SESSION['cart'])){
                                 $count  = count($_SESSION['cart']);
@@ -124,12 +123,9 @@ if (isset($_POST['remove'])){
     <a href="Paymentform.php" class="continue">Purchase Items</a>
   </div>
 </div>
-           
-
         </div>
     </div>
 </div>
-
 
 <?php require_once ('php/footer.php');?>
 </body>
