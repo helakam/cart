@@ -45,3 +45,13 @@ if (isset($_POST['remove'])){
     //require_once ('php/header.php');
 
 ?>
+<!--   <div class="shopping-cart">
+                <h6>My Cart</h6>-->
+                
+                <div class="wrap cf">
+ 
+  <div class="heading cf">
+    <h1>My Cart</h1>
+    <a href="#" class="continue">Continue Shopping</a>
+  </div>
+</div>
