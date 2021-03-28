@@ -115,3 +115,22 @@ if (isset($_POST['remove'])){
                             echo  $total;
                             ?></h6>
                    </section>
+
+                      </div>
+            <div class="wrap cf">
+ 
+  <div class="heading cf">
+   
+    <a href="Paymentform.php" class="continue">Purchase Items</a>
+  </div>
+</div>
+           
+
+        </div>
+    </div>
+</div>
+
+
+<?php require_once ('php/footer.php');?>
+</body>
+</html>
