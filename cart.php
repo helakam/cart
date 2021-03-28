@@ -32,3 +32,16 @@ if (isset($_POST['remove'])){
 <link rel="stylesheet" href="css/footer.css" />
          <!-- <link rel="stylesheet" href="css/cart.css" />-->
    
+<link rel="stylesheet" href="css/stylecart.css">
+  <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/indexs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="bg-light">
+
+<?php
+ require_once ('php/header1.php');
+    //require_once ('php/header.php');
+
+?>
